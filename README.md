@@ -48,6 +48,11 @@ Here is a gif that shows view and layout animation:
 
 ---
 
+## Additional Resources
+- [Android Animations and Graphics](https://developer.android.com/guide/topics/graphics/overview.html)
+
+---
+
 ## Licensing
 1. All content is licensed under a CC­BY­NC­SA 4.0 license.
 2. All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact [legal@ga.co](mailto:legal@ga.co).
