@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ezequielc.simpleanimationlab.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/top_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Type in a Wish"
+            android:maxLines="1"/>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="add a wish"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+    <TextView
+            android:id="@+id/animation_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Wish"
+            android:textSize="30sp"
+            android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/bottom_linear"
+        android:layout_below="@id/top_linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true">
+
+        <!--<TextView-->
+            <!--android:id="@+id/example_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="example_text"/>-->
+    </LinearLayout>
+</RelativeLayout>
