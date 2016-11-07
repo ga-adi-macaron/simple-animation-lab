@@ -1,5 +1,6 @@
 package shuvalov.nikita.simpleanimationslab;
 
+import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -30,14 +31,19 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String wish =userEntry.getText().toString();
                 currentWish.setText(wish);
-                Animation animation = AnimationUtils.loadAnimation(view.getContext(),R.anim.into_empty_list);
+                userEntry.setText("");
+
+                Animation animation = AnimationUtils.loadAnimation(view.getContext(),R.anim.into_list);
                 currentWish.setAnimation(animation);
 
                 //New TextView for wishlist group.
                 TextView textView = new TextView(view.getContext());
-                textView.setText(wish);
+                textView.setAlpha(0);
+                textView.setMaxLines(1);
                 wishList.addView(textView,0);
 
+                textView.animate().alphaBy(100).setDuration(1500);
+                textView.setText(wish);
             }
         });
 

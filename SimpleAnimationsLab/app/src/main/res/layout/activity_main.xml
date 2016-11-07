@@ -15,7 +15,9 @@
         android:id="@+id/user_entry"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter wish here"/>
+        android:hint="Enter wish here"
+        android:inputType="textMultiLine"
+        android:maxLines="1"/>
     <Button
         android:id="@+id/enter_wish"
         android:layout_width="wrap_content"
@@ -23,15 +25,18 @@
         android:layout_below="@id/user_entry"
         android:layout_centerHorizontal="true"
         android:text="Add wish"/>
+
+
     <TextView
         android:id="@+id/wish_text"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/enter_wish"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="20dp"
         android:text="Holder Text"
-        android:textColor="#333"/>
+        android:textColor="#333"
+        android:maxLines="1"/>
     
     <LinearLayout
         android:id="@+id/wish_holder"

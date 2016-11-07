@@ -27,7 +27,8 @@
     <alpha
         android:startOffset="800"
         android:toAlpha="0"
-        android:duration="500"/>
+        android:duration="500"
+        android:fillAfter="true"/>
     <translate
         android:startOffset="1100"
         android:toYDelta="100"
